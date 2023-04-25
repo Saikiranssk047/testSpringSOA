@@ -1,0 +1,14 @@
+<template>
+    <template if:true={Accountsdata}>
+        <template for:each={Accountsdata} for:item="data">
+            <div key={data.Id}>
+                Id:{data.Id}<br/>
+                Name:{data.Name}<br/>
+                Phone:{data.Phone}<br/>
+                Rating:{data.Rating}<br/>
+                Industry:{data.Industry}<br/>
+                AnnualRevenue:{data.AnnualRevenue}
+            </div>
+        </template>
+    </template>  
+</template>
